@@ -853,3 +853,132 @@ p {
   100% { color: red; }
 }
 
+
+
+
+/* Styles for the Services Section */
+#services {
+  padding: 50px 0;
+  background-color: #f3f4f6; /* Light background color for contrast */
+  text-align: center; /* Centers text */
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333; /* Dark color for the title */
+  margin-bottom: 20px;
+}
+
+.section-title span {
+  color: #007BFF; /* Highlighted color for 'i' in 'Services' */
+}
+
+.service-top p {
+  max-width: 600px;
+  margin: 0 auto 30px auto; /* Centers and adds spacing */
+  color: #666;
+  line-height: 1.6;
+}
+
+.service-bottom {
+  display: flex;
+  justify-content: center; /* Centers service items */
+  gap: 20px; /* Space between items */
+  flex-wrap: wrap; /* Wraps items to new row on smaller screens */
+}
+
+.service-item {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px; /* Set a fixed width for consistent layout */
+  +6transition: transform 0.3s, box-shadow 0.3s;
+}*
+
+.service-item:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.service-item .icon img {
+  width: 100px; /* Adjust icon size */
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.service-item h2 {
+  font-size: 24px;
+  color: #007BFF; /* Styles for the Services Section */
+#services {
+    padding: 50px 0;
+    background-color: #f3f4f6; /* Light background color for contrast */
+    text-align: center; /* Centers text */
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333; /* Dark color for the title */
+    margin-bottom: 20px;
+}
+
+.section-title span {
+    color: #007BFF; /* Highlighted color for 'i' in 'Services' */
+}
+
+.service-top p {
+    max-width: 700px;
+    margin: 0 auto 30px auto; /* Centers and adds spacing */
+    color: #666;
+    line-height: 1.6;
+}
+
+.service-bottom {
+    display: flex;
+    justify-content: center; /* Centers service items */
+    gap: 20px; /* Space between items */
+    flex-wrap: wrap; /* Wraps items to new row on smaller screens */
+}
+
+.service-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px; /* Set a fixed width for consistent layout */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-item:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.service-item .icon img {
+    width: 100px; /* Adjust icon size */
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.service-item h2 {
+    font-size: 24px;
+    color: #007BFF; /* Highlighted color for the service title */
+    margin-bottom: 15px;
+}
+
+.service-item p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+  margin-bottom: 15px;
+}
+
+.service-item p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+}
