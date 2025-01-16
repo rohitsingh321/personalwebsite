@@ -1,131 +1,133 @@
 // Questions and Options Data
+// Questions and Options Data
 const questions = [
   {
-    question: "Who is considered the 'Father of Computers'?",
-    options: ["Charles Babbage", "Alan Turing", "John von Neumann", "Ada Lovelace"],
-    correct: 0,
-  },
-  {
-    question: "What was the name of the first mechanical computer?",
-    options: ["ENIAC", "Analytical Engine", "UNIVAC", "Difference Engine"],
-    correct: 3,
-  },
-  {
-    question: "The first programmable computer, Z3, was developed by:",
-    options: ["Konrad Zuse", "Steve Jobs", "Alan Turing", "Charles Babbage"],
-    correct: 0,
-  },
-  {
-    question: "In what year was the first electronic computer, ENIAC, completed?",
-    options: ["1939", "1943", "1946", "1951"],
+    question: "क्षेत्रफलको आधारमा युरोपको सबैभन्दा ठूलो देश कुन हो?",
+    options: ["फ्रान्स", "युक्रेन", "रूस", "स्पेन"],
     correct: 2,
   },
   {
-    question: "The first generation of computers used:",
-    options: ["Transistors", "Vacuum tubes", "Integrated Circuits", "Microprocessors"],
-    correct: 1,
-  },
-  {
-    question: "Who is known for breaking the German Enigma code during World War II?",
-    options: ["John von Neumann", "Alan Turing", "Charles Babbage", "Grace Hopper"],
-    correct: 1,
-  },
-  {
-    question: "COBOL, one of the earliest programming languages, was developed by:",
-    options: ["Grace Hopper", "Dennis Ritchie", "John Backus", "Ada Lovelace"],
-    correct: 0,
-  },
-  {
-    question: "Which company introduced the first commercially successful personal computer, the Altair 8800?",
-    options: ["IBM", "Microsoft", "Apple", "MITS"],
-    correct: 3,
-  },
-  {
-    question: "What does the acronym UNIVAC stand for?",
-    options: ["Universal Automatic Computer", "United Vacuum Analyzer Control", "Universal Advanced Calculator", "Unitary Automatic Computer"],
-    correct: 0,
-  },
-  {
-    question: "The first computer virus, 'Creeper,' was created in:",
-    options: ["1960s", "1970s", "1980s", "1990s"],
-    correct: 1,
-  },
-  {
-    question: "The first high-level programming language was:",
-    options: ["FORTRAN", "COBOL", "BASIC", "Pascal"],
-    correct: 0,
-  },
-  {
-    question: "Which company created the first floppy disk?",
-    options: ["Apple", "IBM", "Microsoft", "Xerox"],
-    correct: 1,
-  },
-  {
-    question: "The mouse was invented by:",
-    options: ["Steve Jobs", "Bill Gates", "Douglas Engelbart", "Alan Kay"],
+    question: "युरोपको सबैभन्दा लामो नदी कुन हो?",
+    options: ["राइन", "डानुब", "भोल्गा", "थेम्स"],
     correct: 2,
   },
   {
-    question: "The World Wide Web was invented by:",
-    options: ["Vinton Cerf", "Tim Berners-Lee", "Marc Andreessen", "Larry Page"],
-    correct: 1,
-  },
-  {
-    question: "The first widely used operating system for personal computers was:",
-    options: ["Windows", "UNIX", "MS-DOS", "Linux"],
-    correct: 2,
-  },
-  {
-    question: "What was the primary storage medium for early computers?",
-    options: ["Magnetic tape", "Hard disks", "SSDs", "CDs"],
+    question: "जर्मनीको राजधानी शहर कुन हो?",
+    options: ["बर्लिन", "म्युनिक", "ह्याम्बर्ग", "फ्रान्कफर्ट"],
     correct: 0,
   },
   {
-    question: "Which device marked the beginning of the third generation of computers?",
-    options: ["Vacuum tubes", "Transistors", "Integrated Circuits", "Microprocessors"],
+    question: "कुन पर्वत शृङ्खलाले युरोपलाई एशियाबाट अलग गर्छ?",
+    options: ["आल्प्स", "पाइरेनीज", "युराल पर्वत", "कार्पेथियन्स"],
     correct: 2,
   },
   {
-    question: "The concept of a stored-program computer was proposed by:",
-    options: ["Alan Turing", "John von Neumann", "Charles Babbage", "Konrad Zuse"],
-    correct: 1,
-  },
-  {
-    question: "What year was the first iPhone released?",
-    options: ["2005", "2007", "2009", "2010"],
-    correct: 1,
-  },
-  {
-    question: "The PDP-1, an early minicomputer, was developed by:",
-    options: ["IBM", "DEC", "HP", "Intel"],
-    correct: 1,
-  },
-  {
-    question: "ARPANET, the precursor to the internet, was established in:",
-    options: ["1959", "1963", "1969", "1972"],
+    question: "कुन युरोपेली देशलाई 'हजारौं तालहरूको देश' भनेर चिनिन्छ?",
+    options: ["नर्वे", "स्वीडेन", "फिनल्यान्ड", "आइसल्यान्ड"],
     correct: 2,
   },
   {
-    question: "The first laptop computer, Osborne 1, was introduced in:",
-    options: ["1981", "1983", "1985", "1987"],
+    question: "आइफल टावर कुन युरोपेली शहरमा अवस्थित छ?",
+    options: ["लन्डन", "रोम", "पेरिस", "म्याड्रिड"],
+    correct: 2,
+  },
+  {
+    question: "युरोपको उत्तरमा कुन समुद्र सिमाना छ?",
+    options: ["भूमध्यसागर", "बाल्टिक सागर", "कालो सागर", "उत्तर सागर"],
+    correct: 1,
+  },
+  {
+    question: "कुन युरोपेली देशमा सबैभन्दा धेरै टापुहरू छन्?",
+    options: ["नर्वे", "स्वीडेन", "ग्रीस", "इटाली"],
+    correct: 1,
+  },
+  {
+    question: "युरोपेली संघको आधिकारिक मुद्रा के हो?",
+    options: ["पाउन्ड", "यूरो", "डॉलर", "फ्रांक"],
+    correct: 1,
+  },
+  {
+    question: "क्षेत्रफलको हिसाबले युरोपको सबैभन्दा सानो देश कुन हो?",
+    options: ["स्यान मारिनो", "मोनाको", "भेटिकन सिटी", "लिक्टेनस्टाइन"],
+    correct: 2,
+  },
+  {
+    question: "कुन युरोपेली शहर आफ्नो नहरहरू र गोंडोलाहरूको लागि प्रसिद्ध छ?",
+    options: ["भेनिस", "एम्स्टर्डम", "कोपेनहेगन", "ब्रुग्स"],
     correct: 0,
   },
   {
-    question: "The term 'Artificial Intelligence' was first coined by:",
-    options: ["Alan Turing", "John McCarthy", "Marvin Minsky", "Herbert Simon"],
+    question: "कुन देश आफ्नो ट्यूलिप र पवनचक्कीहरूको लागि प्रसिद्ध छ?",
+    options: ["डेनमार्क", "नेदरल्याण्ड", "बेल्जियम", "स्विजरल्यान्ड"],
     correct: 1,
   },
   {
-    question: "The first graphical user interface (GUI) was developed by:",
-    options: ["Apple", "Xerox", "Microsoft", "IBM"],
+    question: "एक्रोपोलिस कुन शहरमा अवस्थित छ?",
+    options: ["रोम", "एथेन्स", "इस्तानबुल", "बार्सिलोना"],
     correct: 1,
   },
   {
-    question: "Who co-founded Microsoft?",
-    options: ["Steve Jobs and Steve Wozniak", "Larry Page and Sergey Brin", "Bill Gates and Paul Allen", "Jeff Bezos and Elon Musk"],
+    question: "कुन युरोपेली देशको आकार बुट जस्तो छ?",
+    options: ["फ्रान्स", "स्पेन", "इटाली", "पुर्तगाल"],
     correct: 2,
+  },
+  {
+    question: "स्पेनको राजधानी शहर कुन हो?",
+    options: ["बार्सिलोना", "म्याड्रिड", "सेभिल", "भ्यालेन्सिया"],
+    correct: 1,
+  },
+  {
+    question: "स्टोनहेंज कुन देशमा अवस्थित छ?",
+    options: ["आयरल्याण्ड", "वेल्स", "इङ्गल्याण्ड", "स्कटल्यान्ड"],
+    correct: 2,
+  },
+  {
+    question: "कुन युरोपेली देश आफ्नो घडी र चकलेटहरूको लागि प्रसिद्ध छ?",
+    options: ["जर्मनी", "स्विजरल्यान्ड", "अष्ट्रिया", "बेल्जियम"],
+    correct: 1,
+  },
+  {
+    question: "कुन स्क्यान्डिनेभियाली देश आफ्नो फजर्डहरूको लागि प्रसिद्ध छ?",
+    options: ["डेनमार्क", "स्वीडेन", "नर्वे", "फिनल्यान्ड"],
+    correct: 2,
+  },
+  {
+    question: "अष्ट्रियाको राजधानी शहर कुन हो?",
+    options: ["भियना", "साल्जबर्ग", "ग्राज", "इनसब्रुक"],
+    correct: 0,
+  },
+  {
+    question: "कुन युरोपेली देश क्यान्टनहरूमा विभाजित छ?",
+    options: ["बेल्जियम", "स्विजरल्यान्ड", "अष्ट्रिया", "लक्जमबर्ग"],
+    correct: 1,
+  },
+  {
+    question: "कुन देश आफ्नो प्राचीन कोलोसियमको लागि प्रसिद्ध छ?",
+    options: ["फ्रान्स", "इटाली", "ग्रीस", "पुर्तगाल"],
+    correct: 1,
+  },
+  {
+    question: "कुन युरोपेली देशले भूमध्यसागर र एटलान्टिक तटलाइन दुबै छ?",
+    options: ["फ्रान्स", "स्पेन", "पुर्तगाल", "इटाली"],
+    correct: 0,
+  },
+  {
+    question: "प्रसिद्ध 'रेड स्क्वायर' कुन युरोपेली शहरमा अवस्थित छ?",
+    options: ["मस्को", "वार्सा", "बर्लिन", "प्राग"],
+    correct: 0,
+  },
+  {
+    question: "नर्वेको राजधानी शहर कुन हो?",
+    options: ["स्टकहोम", "हेलेसिंकी", "ओस्लो", "कोपेनहेगन"],
+    correct: 2,
+  },
+  {
+    question: "कुन देश ट्रान्सल्भानियाको ऐतिहासिक क्षेत्रको घर हो?",
+    options: ["हंगेरी", "रोमानिया", "बुल्गेरिया", "युक्रेन"],
+    correct: 1,
   },
 ];
+
 
 
 let currentQuestionIndex = 0;

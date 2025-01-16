@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marks Ledger</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        input[type="text"] {
+            width: 60px;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .save-button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .save-button:hover {
+            background-color: #218838;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Student Marks Ledger</h1>
+    </div>
+
+    <form id="marksForm">
+        <table>
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th colspan="2">Subject 1</th>
+                    <th colspan="2">Subject 2</th>
+                    <th colspan="2">Subject 3</th>
+                    <th colspan="2">Subject 4</th>
+                    <th colspan="2">Subject 5</th>
+                    <th colspan="2">Subject 6</th>
+                    <th colspan="2">Subject 7</th>
+                    <th colspan="2">Subject 8</th>
+                    <th colspan="2">Subject 9</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>Theory</th>
+                    <th>Practical</th>
+                    <th>Theory</th>
+                    <th>Practical</th>
+                    <th>Theory</th>
+                    <th>Practical</th>
+                    <th>Theory</th>
+                    <th>Practical</th>
+                    <th>Theory</th>
+                    <th>Practical</th>
+                    <th>Theory</th>
+                    <th>Practical</th>
+                    <th>Theory</th>
+                    <th>Practical</th>
+                    <th>Theory</th>
+                    <th>Practical</th>
+                    <th>Theory</th>
+                    <th>Practical</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Generate 50 rows dynamically -->
+                <script>
+                    let content = "";
+                    for (let i = 1; i <= 50; i++) {
+                        content += `<tr>
+                            <td><input type='text' name='student_name_${i}' placeholder='Student ${i}' required></td>`;
+                        for (let j = 1; j <= 9; j++) {
+                            content += `<td><input type='text' name='subject_${j}_theory_${i}'></td>
+                                        <td><input type='text' name='subject_${j}_practical_${i}'></td>`;
+                        }
+                        content += `</tr>`;
+                    }
+                    document.write(content);
+                </script>
+            </tbody>
+        </table>
+        <button type="button" class="save-button" onclick="saveToGoogleSheet()">Save</button>
+    </form>
+
+    <script>
+        function saveToGoogleSheet() {
+            const formData = new FormData(document.getElementById('marksForm'));
+            const data = {};
+            formData.forEach((value, key) => {
+                data[key] = value;
+            });
+
+            fetch('https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert('Marks saved successfully!');
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Failed to save marks. Please try again.');
+            });
+        }
+    </script>
+</body>
+</html>
