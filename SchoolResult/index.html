@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gurukul Pathshala - Mark Entry System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+
+        <table class="semester-table">
+         
+            <tbody>
+                <tr>
+                    <td class="button-group">
+                        <a href="../index.html" class="menu-btn">HOME</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+
+
+
+
+
+    <div class="container">
+        <div class="header">
+            <h1>GURUKUL PATHSHALA</h1>
+            <p>Mirchaiya-05, Siraha (Nepal)</p>
+            <p>Annual Examination-2081 B.S.</p>
+        </div>
+
+        <div class="teacher-info">
+            <h3>Teacher Information</h3>
+            <div class="form-group">
+                <label for="teacherName">Teacher Name</label>
+                <input type="text" id="teacherName" placeholder="Your Full Name" required>
+                <div id="teacherNameError" class="error-message"></div>
+            </div>
+            <div class="form-group">
+                <label for="teacherEmail">Teacher Email</label>
+                <input type="email" id="teacherEmail" placeholder="Your Email Address" required>
+                <div id="teacherEmailError" class="error-message"></div>
+            </div>
+            <div class="form-group">
+                <label for="classSelect">Class</label>
+                <select id="classSelect" required>
+                    <option value="">-- Select Class --</option>
+                    <option value="Playgroup">Playgroup</option>
+                    <option value="LKG">LKG</option>
+                    <option value="UKG">UKG</option>
+                    <option value="1">Class 1</option>
+                    <option value="2">Class 2</option>
+                    <option value="3">Class 3</option>
+                    <option value="4">Class 4</option>
+                    <option value="5">Class 5</option>
+                    <option value="6">Class 6</option>
+                    <option value="7">Class 7</option>
+                    <option value="8">Class 8</option>
+                    <option value="9">Class 9</option>
+                    <option value="10">Class 10</option>
+                    <option value="11">Class 11</option>
+                    <option value="12">Class 12</option>
+                </select>
+                <div id="classError" class="error-message"></div>
+            </div>
+            <div class="form-group">
+                <label for="sectionSelect">Section</label>
+                <select id="sectionSelect" required>
+                    <option value="">-- Select Section --</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select>
+                <div id="sectionError" class="error-message"></div>
+            </div>
+        </div>
+
+        <div class="subject-selector">
+            <h3>Select Subject to Enter Marks</h3>
+            <select id="subjectSelect" required>
+                <option value="">-- Select Subject --</option>
+                <option value="ENGLISH">HAMRO SEROPHERO</option>
+                <option value="ENGLISH">RHYMES</option>
+                <option value="ENGLISH">HYGIENE</option>
+                <option value="ENGLISH">EXTRA CURRICULAR ACTIVITY</option>
+                <option value="ENGLISH">LOCAL</option>
+                <option value="ENGLISH">DRAWING</option>
+                <option value="ENGLISH">SOCAIL</option>
+                <option value="ENGLISH">TRANSLATION</option>
+                                <option value="ENGLISH">WRITING</option>
+                                <option value="ENGLISH">READING</option>
+                                <option value="ENGLISH">ENGLISH</option>
+
+                <option value="ENGLISH">ENGLISH</option>
+                <option value="NEPALI">NEPALI</option>
+                <option value="MATH">MATH</option>
+                <option value="SCIENCE">SCIENCE</option>
+                <option value="SOCIAL">SOCIAL</option>
+                <option value="HEALTH">HEALTH</option>
+                <option value="COMPUTER">COMPUTER</option>
+                <option value="G.K">G.K</option>
+                <option value="CONVERSATION">CONVERSATION</option>
+            </select>
+            <button id="loadSubjectBtn">Load Subject</button>
+            <div id="subjectError" class="error-message"></div>
+        </div>
+
+        <div id="markEntrySection" class="hidden">
+            <h3 id="subjectTitle"></h3>
+            <h4 id="classSectionTitle"></h4>
+            <table id="marksTable">
+                <thead>
+                    <tr>
+                        <th>S.N.</th>
+                        <th>Student Name</th>
+                        <th>Theory</th>
+                        <th>Practical</th>
+                    </tr>
+                </thead>
+                <tbody id="marksTableBody">
+                    <!-- Student rows will be added here -->
+                </tbody>
+            </table>
+            <button id="submitMarksBtn" class="submit-btn">
+                <span id="submitText">Submit Marks</span>
+                <span id="submitSpinner" class="loading hidden"></span>
+            </button>
+        </div>
+
+        <div id="successMessage" class="hidden" style="text-align: center; padding: 20px;">
+            <div style="color: green; font-weight: bold; font-size: 18px; margin-bottom: 10px;">
+                Marks submitted successfully!
+            </div>
+            <div style="margin-bottom: 15px;">
+                A confirmation email has been sent to <span id="confirmationEmail"></span>
+            </div>
+            <button id="newEntryBtn">Enter New Marks</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
